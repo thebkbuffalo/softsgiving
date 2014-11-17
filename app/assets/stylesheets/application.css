@@ -16,6 +16,17 @@ body {
   padding: 1em;
 }
 
+#users_coming {
+  border: 1px solid black;
+  background: #FC7A07;
+  opacity: .9;
+  margin: 0 30em;
+}
+
+#users_coming h1 {
+  margin-bottom: -.5em;
+}
+
 #users {
   border: 1px solid black;
   margin: 1em 30em;
