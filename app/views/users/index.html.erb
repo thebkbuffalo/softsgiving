@@ -16,7 +16,7 @@
         Name: <strong><%= user.name %></strong><br/>
         # of Guests: <strong><%= user.guests %></strong><br/>
         Dish: <strong><%= user.dish %></strong><br/>
-        <%= link_to 'Change your mind?', edit_user_path(user) %><br/>
+        <%= link_to 'Edit Your Shit!', edit_user_path(user) %><br/>
         <%= link_to 'Not Coming?', user, method: :delete, data: { confirm: 'Are you sure?' } %><br/><br/>
       </div>
     <% end %>
