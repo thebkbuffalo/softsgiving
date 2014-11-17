@@ -1,26 +1,21 @@
-<h1>SOFTSGIVING 9!!!!!!!</h1>
-<p>Friends!!!  Welcome to Softsgiving 9!  Seeing as how so many of you beautiful and wonderful people make it to this joyous occasion year after year, I figured it's time to make life a little easier on our wonderful hosts.  SO, with that in mind, I kindly ask you to "register" if you will, letting the loveliest Drew and Eli know whose coming, whose bringing who, and what you might be bringing.<br/>Much love to you all and can't wait to see everyone at Softsgiving 9!!!!</p>
+<section id="intro">
+  <h1>SOFTSGIVING 9!!!!!!!</h1>
+  <p>Friends!!!  Welcome to Softsgiving 9!  Seeing as how so many of you beautiful and wonderful people make it to this joyous occasion year after year, I figured it's time to make life a little easier on our wonderful hosts.  SO, with that in mind, I kindly ask you to "register" if you will, letting the loveliest Drew and Eli know whose coming, whose bringing who, and what you might be bringing.<br/>Much love to you all and can't wait to see everyone at Softsgiving 9!!!!</p>
+</section>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
+<br/><br/>
   <%= render "form" %>
+<br/><br/>
+  <% @users.each do |user| %>
+    <div id="users">
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.guests %></td>
-        <td><%= user.dish %></td>
-        <td><%= link_to 'Change your mind?', edit_user_path(user) %></td>
-        <td><%= link_to 'Not Coming?', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        Name: <strong><%= user.name %></strong><br/>
+        # of Guests: <strong><%= user.guests %></strong><br/>
+        Dish: <strong><%= user.dish %></strong><br/>
+        <%= link_to 'Change your mind?', edit_user_path(user) %><br/>
+        <%= link_to 'Not Coming?', user, method: :delete, data: { confirm: 'Are you sure?' } %><br/><br/>
+      </div>
     <% end %>
-  </tbody>
-</table>
+
 
 <br>

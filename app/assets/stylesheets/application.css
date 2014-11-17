@@ -1,15 +1,38 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+  background: url('http://hdwallpapersmart.com/wp-content/uploads/2014/03/wildlife-male_00378840.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+}
+
+#intro {
+  background: rgba(0,0,0,.8);
+  color: white;
+  padding: 1em;
+}
+
+#users {
+  border: 1px solid black;
+  margin: 1em 30em;
+  text-align: left;
+  background: #FC7A07;
+  opacity: .9;
+}
+
+#user_form {
+  margin: auto auto;
+  background: rgba(0,0,0,.7);
+  width: 29em;
+  padding: .75em;
+  color: white;
+}
+
+#user_name, #user_guests, #user_dish {
+  height: 1.73em;
+  width: 23em;
+}
