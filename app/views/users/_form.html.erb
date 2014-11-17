@@ -12,11 +12,10 @@
       </div>
     <% end %>
   <div id="user_form">
-    <%= f.text_field :name, placeholder: "What's ya name?" %>
-    <%= f.number_field :guests, placeholder: "# of guests?" %>
-    <%= t.text_field :dish, placeholder: "What are ya bringin?" %>
-
-    <div class="actions">
+    <%= f.text_field :name, placeholder: "What's ya name?" %><br/>
+    <%= f.number_field :guests, placeholder: "# of guests?" %><br/>
+    <%= f.text_field :dish, placeholder: "What are ya bringin?" %><br/>
+  <div class="actions">
       <%= f.submit %>
     </div>
   </div>
