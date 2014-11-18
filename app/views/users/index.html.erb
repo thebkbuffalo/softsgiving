@@ -16,9 +16,9 @@ Evan Berg</p>
   <% @users.each do |user| %>
     <div id="users">
 
-        Name: <strong><%= user.name %></strong><br/>
-        # of Guests: <strong><%= user.guests %></strong><br/>
-        Dish: <strong><%= user.dish %></strong><br/>
+        Name: <bold><%= user.name %></bold><br/>
+        # of Guests: <bold><%= user.guests %></bold><br/>
+        Dish: <bold><%= user.dish %></bold><br/>
         <%= link_to 'Edit Your Shit!', edit_user_path(user) %><br/>
         <%= link_to 'Not Coming?', user, method: :delete, data: { confirm: 'Are you sure?' } %><br/><br/>
       </div>
