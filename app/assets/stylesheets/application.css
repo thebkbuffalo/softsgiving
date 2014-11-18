@@ -1,20 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
 html {
   background: url('http://hdwallpapersmart.com/wp-content/uploads/2014/03/wildlife-male_00378840.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Lora', serif;
 }
 
 body {
   text-align: center;
+}
 
+h1 {
+  font-size: 2.5em;
 }
 
 #intro {
   background: rgba(0,0,0,.85);
   color: white;
   padding: 1em;
+  border: 1px solid white;
 }
 
 #users_coming {
@@ -24,8 +78,9 @@ body {
   margin: 0 30em;
 }
 
-#users_coming h1 {
-  margin-bottom: -.5em;
+#phrasing {
+  font-size: .8em;
+  padding-bottom: .5em;
 }
 
 #users {
@@ -42,6 +97,7 @@ body {
   width: 29em;
   padding: .75em;
   color: white;
+  border: 1px solid white;
 }
 
 #user_name, #user_guests, #user_dish {
