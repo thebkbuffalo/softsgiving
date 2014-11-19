@@ -109,3 +109,21 @@ h1 {
   height: 1.73em;
   width: 23em;
 }
+
+
+@media (max-width: 600px) {
+  #users_coming {
+    width: 15em;
+    margin: auto auto;
+  }
+
+  #users {
+    margin: auto auto;
+    text-align: center;
+    width: 15em;
+  }
+
+  #intro {
+
+  }
+}
