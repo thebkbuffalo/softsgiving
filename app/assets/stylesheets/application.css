@@ -117,6 +117,7 @@ and (max-device-width : 480px) {
   #users_coming {
     width: 15em;
     margin: auto auto;
+    font-size: 1.3em;
   }
 
   #users {
