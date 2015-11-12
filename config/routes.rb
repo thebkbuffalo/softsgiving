@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :comments
+
   root "users#index"
   get "/users" => "users#index"
 
